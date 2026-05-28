@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ethan — Full Stack Web Developer. Website profesional, selesai tepat waktu.">
+  <title>Ethan — Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header>
+    <div class="container nav">
+      <a href="#" class="nav__logo">Ethan</a>
+      <nav class="nav__menu">
+        <a href="#about" class="nav__link">About</a>
+        <a href="#services" class="nav__link">Services</a>
+        <a href="#portfolio" class="nav__link">Portfolio</a>
+        <a href="#contact" class="nav__link">Contact</a>
+        <a href="#contact" class="btn btn--primary nav__cta">Hubungi Saya</a>
+      </nav>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+        <span class="nav__hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section id="hero">
+      <div class="container hero">
+        <div class="hero__content">
+          <span class="hero__badge">⚡ Fast Delivery</span>
+          <h1 class="hero__title">Website Profesional, Selesai Tepat Waktu</h1>
+          <p class="hero__subtitle">Saya membangun website yang bekerja — cepat, bersih, dan siap pakai. Tanpa drama, tanpa delay.</p>
+          <div class="hero__actions">
+            <a href="#portfolio" class="btn btn--primary">Lihat Portfolio</a>
+            <a href="#contact" class="btn btn--secondary">Hubungi Saya</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <svg class="hero__svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+            <defs>
+              <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#2563EB" stop-opacity="0.12"/>
+                <stop offset="100%" stop-color="#7C3AED" stop-opacity="0.06"/>
+              </linearGradient>
+              <linearGradient id="g2" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#2563EB"/>
+                <stop offset="100%" stop-color="#7C3AED"/>
+              </linearGradient>
+            </defs>
+            <circle cx="200" cy="200" r="160" fill="url(#g1)"/>
+            <circle cx="200" cy="200" r="110" fill="none" stroke="#2563EB" stroke-width="1.5" opacity="0.3"/>
+            <circle cx="200" cy="200" r="70" fill="none" stroke="#2563EB" stroke-width="1" opacity="0.2"/>
+            <rect x="140" y="130" width="120" height="80" rx="12" fill="#fff" stroke="#E5E5E5" stroke-width="1.5" filter="drop-shadow(0 4px 12px rgba(0,0,0,0.06))"/>
+            <rect x="155" y="150" width="60" height="6" rx="3" fill="#EFF6FF"/>
+            <rect x="155" y="164" width="90" height="4" rx="2" fill="#F7F7F7"/>
+            <rect x="155" y="176" width="75" height="4" rx="2" fill="#F7F7F7"/>
+            <rect x="155" y="190" width="40" height="8" rx="4" fill="url(#g2)" opacity="0.8"/>
+            <rect x="260" y="220" width="80" height="80" rx="12" fill="#fff" stroke="#E5E5E5" stroke-width="1.5" filter="drop-shadow(0 4px 12px rgba(0,0,0,0.06))"/>
+            <rect x="272" y="240" width="56" height="4" rx="2" fill="#EFF6FF"/>
+            <rect x="272" y="252" width="40" height="4" rx="2" fill="#F7F7F7"/>
+            <rect x="272" y="264" width="50" height="4" rx="2" fill="#F7F7F7"/>
+            <rect x="272" y="278" width="30" height="8" rx="4" fill="url(#g2)" opacity="0.6"/>
+            <rect x="90" y="240" width="100" height="60" rx="12" fill="#fff" stroke="#E5E5E5" stroke-width="1.5" filter="drop-shadow(0 4px 12px rgba(0,0,0,0.06))"/>
+            <rect x="102" y="256" width="76" height="4" rx="2" fill="#EFF6FF"/>
+            <rect x="102" y="268" width="50" height="4" rx="2" fill="#F7F7F7"/>
+            <rect x="102" y="280" width="60" height="4" rx="2" fill="#F7F7F7"/>
+            <line x1="200" y1="80" x2="200" y2="130" stroke="#2563EB" stroke-width="1" stroke-dasharray="4 4" opacity="0.4"/>
+            <line x1="260" y1="220" x2="230" y2="210" stroke="#2563EB" stroke-width="1" stroke-dasharray="4 4" opacity="0.3"/>
+            <line x1="190" y1="240" x2="170" y2="210" stroke="#2563EB" stroke-width="1" stroke-dasharray="4 4" opacity="0.3"/>
+            <circle cx="320" cy="100" r="20" fill="#EFF6FF" stroke="#2563EB" stroke-width="1" opacity="0.6"/>
+            <circle cx="320" cy="100" r="8" fill="url(#g2)" opacity="0.8"/>
+            <circle cx="100" cy="120" r="14" fill="#EFF6FF" stroke="#2563EB" stroke-width="1" opacity="0.4"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about">
+      <div class="container about">
+        <div class="section__header reveal">
+          <h2 class="section__title">Tentang Saya</h2>
+        </div>
+        <div class="about__content reveal">
+          <div class="about__avatar">E</div>
+          <div class="about__info">
+            <p class="about__bio">Saya Ethan, full stack developer dengan fokus pada kecepatan dan kualitas. Setiap project saya kerjakan dengan serius — dari desain hingga deployment. Klien saya dapat website yang berfungsi, bukan sekadar tampilan.</p>
+            <div class="about__skills">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">Git</span>
+              <span class="tag">Figma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section id="services">
+      <div class="container services">
+        <div class="section__header reveal">
+          <h2 class="section__title">Jasa</h2>
+        </div>
+        <div class="cards cards--3col">
+          <div class="card services__card reveal">
+            <div class="services__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <h3 class="services__title">Landing Page</h3>
+            <p class="services__desc">Halaman yang mengkonversi pengunjung menjadi klien. Cepat, mobile-friendly, dan SEO-ready.</p>
+          </div>
+          <div class="card services__card reveal">
+            <div class="services__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+              </svg>
+            </div>
+            <h3 class="services__title">E-Commerce</h3>
+            <p class="services__desc">Toko online lengkap dengan katalog produk, keranjang, dan sistem pembayaran.</p>
+          </div>
+          <div class="card services__card reveal">
+            <div class="services__icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3 class="services__title">Web App</h3>
+            <p class="services__desc">Aplikasi web custom sesuai kebutuhan bisnis Anda, dari CRM hingga dashboard internal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PORTFOLIO ========== -->
+    <section id="portfolio">
+      <div class="container portfolio">
+        <div class="section__header reveal">
+          <h2 class="section__title">Portfolio</h2>
+        </div>
+        <div class="cards cards--3col">
+          <div class="card portfolio__card reveal">
+            <div class="portfolio__image">
+              <img src="assets/images/projects/properti.svg" alt="Properti Idaman — Real estate landing page" loading="lazy">
+            </div>
+            <div class="portfolio__body">
+              <span class="portfolio__badge">Landing Page</span>
+              <h3 class="portfolio__title">Properti Idaman</h3>
+              <div class="portfolio__tags">
+                <span class="tag tag--small">HTML</span>
+                <span class="tag tag--small">CSS</span>
+                <span class="tag tag--small">JS</span>
+              </div>
+            </div>
+          </div>
+          <div class="card portfolio__card reveal">
+            <div class="portfolio__image">
+              <img src="assets/images/projects/elektronik.svg" alt="TechMart — Electronics e-commerce" loading="lazy">
+            </div>
+            <div class="portfolio__body">
+              <span class="portfolio__badge">E-Commerce</span>
+              <h3 class="portfolio__title">TechMart</h3>
+              <div class="portfolio__tags">
+                <span class="tag tag--small">React</span>
+                <span class="tag tag--small">Node.js</span>
+                <span class="tag tag--small">MySQL</span>
+              </div>
+            </div>
+          </div>
+          <div class="card portfolio__card reveal">
+            <div class="portfolio__image">
+              <img src="assets/images/projects/konsultan.svg" alt="Konsulta Pro — Consulting company profile" loading="lazy">
+            </div>
+            <div class="portfolio__body">
+              <span class="portfolio__badge">Company Profile</span>
+              <h3 class="portfolio__title">Konsulta Pro</h3>
+              <div class="portfolio__tags">
+                <span class="tag tag--small">HTML</span>
+                <span class="tag tag--small">CSS</span>
+                <span class="tag tag--small">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section id="testimonials">
+      <div class="container testimonials">
+        <div class="section__header reveal">
+          <h2 class="section__title">Testimoni</h2>
+        </div>
+        <div class="cards cards--3col">
+          <div class="card testimonials__card reveal">
+            <div class="testimonials__stars" aria-label="5 bintang">★★★★★</div>
+            <p class="testimonials__text">"Ethan mengerjakan website kami dalam 5 hari. Hasilnya melebihi ekspektasi, dan komunikasinya sangat responsif."</p>
+            <div class="testimonials__author">
+              <div class="testimonials__avatar">BS</div>
+              <div>
+                <strong class="testimonials__name">Budi Santoso</strong>
+                <span class="testimonials__role">Pemilik Properti Idaman</span>
+              </div>
+            </div>
+          </div>
+          <div class="card testimonials__card reveal">
+            <div class="testimonials__stars" aria-label="5 bintang">★★★★★</div>
+            <p class="testimonials__text">"TechMart sekarang punya toko online yang profesional. Proses dari briefing sampai launch sangat smooth."</p>
+            <div class="testimonials__author">
+              <div class="testimonials__avatar">RW</div>
+              <div>
+                <strong class="testimonials__name">Rina Wijaya</strong>
+                <span class="testimonials__role">Manager TechMart</span>
+              </div>
+            </div>
+          </div>
+          <div class="card testimonials__card reveal">
+            <div class="testimonials__stars" aria-label="5 bintang">★★★★★</div>
+            <p class="testimonials__text">"Company profile kami jauh lebih credible sekarang. Klien sering compliment websitenya."</p>
+            <div class="testimonials__author">
+              <div class="testimonials__avatar">AF</div>
+              <div>
+                <strong class="testimonials__name">Ahmad Fauzi</strong>
+                <span class="testimonials__role">Director Konsulta Pro</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact">
+      <div class="container contact">
+        <div class="section__header reveal">
+          <h2 class="section__title">Hubungi Saya</h2>
+          <p class="section__subtitle">Ada project dalam pikiran? Mari diskusi. Saya biasanya merespons dalam 24 jam.</p>
+        </div>
+        <form class="contact__form reveal" autocomplete="off">
+          <div class="form__group">
+            <label class="form__label" for="nama">Nama</label>
+            <input class="form__input" type="text" id="nama" name="nama" placeholder="Nama Anda" required>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="email">Email</label>
+            <input class="form__input" type="email" id="email" name="email" placeholder="email@contoh.com" required>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="jenis">Jenis Project</label>
+            <select class="form__input form__select" id="jenis" name="jenis">
+              <option value="" disabled selected>Pilih jenis project</option>
+              <option value="landing-page">Landing Page</option>
+              <option value="e-commerce">E-Commerce</option>
+              <option value="web-app">Web App</option>
+              <option value="lainnya">Lainnya</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="pesan">Pesan</label>
+            <textarea class="form__input form__textarea" id="pesan" name="pesan" placeholder="Ceritakan project Anda..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container footer">
+      <p class="footer__copy">&copy; 2025 Ethan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

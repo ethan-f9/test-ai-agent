@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <!-- Browser chrome -->
+  <rect width="800" height="450" rx="12" fill="#f0f4ff"/>
+  <rect width="800" height="40" rx="12" fill="#e2e8f0"/>
+  <rect y="12" width="800" height="16" fill="#e2e8f0"/>
+  <circle cx="24" cy="20" r="6" fill="#f87171"/>
+  <circle cx="44" cy="20" r="6" fill="#fbbf24"/>
+  <circle cx="64" cy="20" r="6" fill="#34d399"/>
+  <rect x="100" y="10" width="200" height="20" rx="4" fill="#cbd5e1"/>
+  <text x="200" y="24" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#64748b">properti-idaman.id</text>
+
+  <!-- Hero area -->
+  <rect x="0" y="40" width="800" height="200" fill="#dbeafe"/>
+  <rect x="40" y="80" width="300" height="24" rx="4" fill="#2563EB" opacity="0.9"/>
+  <rect x="40" y="116" width="360" height="12" rx="3" fill="#1e40af" opacity="0.5"/>
+  <rect x="40" y="138" width="280" height="12" rx="3" fill="#1e40af" opacity="0.3"/>
+  <rect x="40" y="170" width="120" height="32" rx="6" fill="#2563EB"/>
+  <text x="100" y="191" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#fff" font-weight="600">Lihat Properti</text>
+
+  <!-- House illustration -->
+  <rect x="500" y="80" width="240" height="140" rx="8" fill="#fff" opacity="0.8"/>
+  <polygon points="620,50 520,120 720,120" fill="#2563EB" opacity="0.15"/>
+  <rect x="540" y="120" width="160" height="80" fill="#2563EB" opacity="0.1"/>
+  <rect x="590" y="150" width="40" height="50" rx="2" fill="#2563EB" opacity="0.3"/>
+  <rect x="555" y="130" width="25" height="20" rx="2" fill="#2563EB" opacity="0.2"/>
+  <rect x="620" y="130" width="25" height="20" rx="2" fill="#2563EB" opacity="0.2"/>
+
+  <!-- Cards row -->
+  <rect x="40" y="270" width="220" height="150" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="50" y="280" width="200" height="80" rx="4" fill="#eff6ff"/>
+  <rect x="50" y="370" width="120" height="10" rx="3" fill="#1e40af" opacity="0.6"/>
+  <rect x="50" y="390" width="180" height="8" rx="2" fill="#cbd5e1"/>
+  <rect x="50" y="406" width="140" height="8" rx="2" fill="#e2e8f0"/>
+
+  <rect x="290" y="270" width="220" height="150" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="300" y="280" width="200" height="80" rx="4" fill="#eff6ff"/>
+  <rect x="300" y="370" width="120" height="10" rx="3" fill="#1e40af" opacity="0.6"/>
+  <rect x="300" y="390" width="180" height="8" rx="2" fill="#cbd5e1"/>
+  <rect x="300" y="406" width="140" height="8" rx="2" fill="#e2e8f0"/>
+
+  <rect x="540" y="270" width="220" height="150" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="550" y="280" width="200" height="80" rx="4" fill="#eff6ff"/>
+  <rect x="550" y="370" width="120" height="10" rx="3" fill="#1e40af" opacity="0.6"/>
+  <rect x="550" y="390" width="180" height="8" rx="2" fill="#cbd5e1"/>
+  <rect x="550" y="406" width="140" height="8" rx="2" fill="#e2e8f0"/>
+
+  <!-- Project label -->
+  <text x="400" y="440" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#94a3b8">Properti Idaman — Real Estate Landing Page</text>
+</svg>
