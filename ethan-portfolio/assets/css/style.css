@@ -73,18 +73,6 @@ section {
   padding: var(--section-padding) 0;
 }
 
-/* ========== SCROLL REVEAL ========== */
-.reveal {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 /* ========== TYPOGRAPHY ========== */
 h1, h2, h3 {
   font-family: var(--font-display);
