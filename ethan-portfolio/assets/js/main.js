@@ -18,17 +18,8 @@ gsap.from('.about__content', {
   opacity: 0, x: 40, duration: 0.7
 });
 
-// Services cards — stagger
-gsap.from('.services .card', {
-  scrollTrigger: { trigger: '#services', start: 'top 75%' },
-  opacity: 0, y: 40, duration: 0.6, stagger: 0.15
-});
-
-// Portfolio cards — stagger
-gsap.from('.portfolio .card', {
-  scrollTrigger: { trigger: '#portfolio', start: 'top 75%' },
-  opacity: 0, y: 40, duration: 0.6, stagger: 0.15
-});
+// Services & Portfolio cards — stacked animation (replaces stagger)
+// Handled by initStackedCards() below
 
 // Testimonials — stagger
 gsap.from('.testimonials .card', {
@@ -96,3 +87,81 @@ navMenu.querySelectorAll('.nav__link').forEach(link => {
     hamburger.setAttribute('aria-expanded', 'false');
   });
 });
+
+
+/* ========== 5. STACKED CARDS ANIMATION ========== */
+function initStackedCards(selector) {
+  const container = document.querySelector(selector + ' .stack-container');
+  if (!container) return;
+  const cards = container.querySelectorAll('.card');
+  const total = cards.length;
+  if (total === 0) return;
+
+  // Set initial stacked position
+  gsap.set(cards, {
+    position: 'absolute',
+    top: 0,
+    left: '50%',
+    xPercent: -50,
+    width: '100%',
+    maxWidth: '700px'
+  });
+
+  cards.forEach((card, i) => {
+    const depth = total - 1 - i;
+    gsap.set(card, {
+      scale: 1 - depth * 0.05,
+      y: depth * 16,
+      zIndex: i + 1,
+      opacity: i === 0 ? 0.4 : i === 1 ? 0.7 : 1
+    });
+  });
+
+  // ScrollTrigger — each card peels away on scroll
+  cards.forEach((card, i) => {
+    if (i === total - 1) return;
+
+    ScrollTrigger.create({
+      trigger: selector,
+      start: `top+=${i * 200} center`,
+      end: `top+=${i * 200 + 200} center`,
+      scrub: true,
+      onUpdate: (self) => {
+        const progress = self.progress;
+        const baseScale = 1 - (total - 1 - i) * 0.05;
+        gsap.set(card, {
+          y: -progress * 500,
+          opacity: 1 - progress,
+          scale: baseScale + progress * 0.05,
+          rotation: progress * -5
+        });
+
+        // Card behind moves forward
+        if (i + 1 < total) {
+          const nextCard = cards[i + 1];
+          const nextDepth = total - 2 - i;
+          gsap.set(nextCard, {
+            scale: (1 - nextDepth * 0.05) + progress * 0.05,
+            y: (nextDepth * 16) - progress * 16,
+            opacity: 0.4 + progress * 0.3
+          });
+        }
+      }
+    });
+  });
+}
+
+// Only init stacked cards on desktop
+if (window.innerWidth > 768) {
+  initStackedCards('#portfolio');
+  initStackedCards('#services');
+}
+
+// Set wrapper height for scroll room
+document.querySelectorAll('.stack-wrapper').forEach(wrapper => {
+  const cards = wrapper.querySelectorAll('.card');
+  wrapper.style.minHeight = `${cards.length * 250 + 400}px`;
+});
+
+// Refresh ScrollTrigger after all animations are initialized
+ScrollTrigger.refresh();
